@@ -1,0 +1,17 @@
+{% extends view_path("layout") %}
+{%  block content %}
+    {% include view_path("header") %}
+
+    <div class="container">
+
+        {% block body_content %}
+        {% endblock %}
+
+
+        <footer>
+            {% block footer %}
+            {% endblock %}
+        </footer>
+
+    </div>
+{% endblock %}

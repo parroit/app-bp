@@ -1,0 +1,45 @@
+<div class="appBox span7">
+    <div class="appBox-header">Login</div>
+
+    <form action="" class="form-horizontal">
+        <div class="appBox-body">
+            <p>Devi accedere con i tuoi dati per visualizzare l'area riservata del sito.</p>
+            <div class="control-group">
+                <label class="control-label" for="username">User</label>
+
+                <div class="controls">
+                    <input type="text" ng-model="username" id="username"/>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="password">Password</label>
+
+                <div class="controls">
+                    <input type="password" id="password" ng-model="password">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox" ng-model="remember"> Rimani autenticato
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="appBox-footer">
+
+            <button type="submit" ng-click="login()" class="btn btn-success btn-large">Login</button>
+            &nbsp;
+            <a href="bv#/reset-password">Ho scordato la password</a>
+            <!-- &nbsp;|&nbsp;
+            <a href="/register">Registrati</a>-->
+
+
+            <div ng-bind="error" ng-class="{hidden:!error}" class="span4 centered alert alert-error">
+
+            </div>
+
+        </div>
+    </form>
+</div>

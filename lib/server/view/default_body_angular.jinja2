@@ -1,0 +1,29 @@
+{% extends view_path("layout") %}
+{%  block content %}
+    {% include view_path("header") %}
+
+    <div class="container">
+
+        {% block body_content %}
+        {% endblock %}
+        <div ng-view></div>
+
+        <footer>
+            {% block footer %}
+            {% endblock %}
+        </footer>
+
+    </div>
+{% endblock %}
+
+{%  block scripts %}
+    <script src="js/angular.js"></script>
+    <script src="js/require.js"></script>
+    <script src="js/client.js"></script>
+    <script type="text/javascript">
+        ClientApp.createFrom("{{ angular_app_name }}");
+
+
+
+    </script>
+{% endblock %}

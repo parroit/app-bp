@@ -1,0 +1,14 @@
+{% extends view_path("layout") %}
+{% block content %}
+    <article>
+        <div class="span9 page-error">
+
+            <h1>500. Errore del server.</h1>
+
+            <p>{{ results.err.message }}</p>
+        </div>
+    </article>
+
+{% endblock  %}
+
+

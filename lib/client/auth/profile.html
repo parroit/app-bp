@@ -1,0 +1,67 @@
+<div class="appBox span7">
+
+
+    <form action="" class="form-horizontal">
+
+        <h1>Profilo dell'utente {{user.nome}} {{user.cognome}}</h1>
+
+        <div class="control-group">
+            <label class="control-label" for="username">Username</label>
+
+            <div class="controls">
+                <input type="text" readonly="readonly" class="readonly" ng-change="save()" ng-model="user.username" id="username"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="password">Password</label>
+
+            <div class="controls">
+                <input type="password" readonly="readonly" class="readonly" id="password" ng-change="save()" ng-model="user.password">
+                <a ng-click="/change-password">Cambia password</a>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ruolo">Ruolo</label>
+
+            <div class="controls">
+                <input type="text" readonly="readonly" class="readonly" ng-model="user.ruolo" id="ruolo"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="nome">Nome</label>
+
+            <div class="controls">
+                <input type="text" ng-change="save()" ng-model="user.nome" id="nome"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="cognome">Cognome</label>
+
+            <div class="controls">
+                <input type="text" ng-change="save()" ng-model="user.cognome" id="cognome"/>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="email">E-Mail</label>
+
+            <div class="controls">
+                <input type="text" ng-change="save()" ng-model="user.email" id="email"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="qualifica">Qualifica</label>
+
+            <div class="controls">
+                <input type="text" ng-change="save()" ng-model="user.qualifica" id="qualifica"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="telefono">Telefono</label>
+
+            <div class="controls">
+                <input type="text" ng-change="save()" ng-model="user.telefono" id="telefono"/>
+            </div>
+        </div>
+    </form>
+</div>

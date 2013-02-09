@@ -1,0 +1,736 @@
+/*body {
+    font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Tahoma,Verdana;
+
+}
+
+.article-container{
+    margin-top: 140px;
+}
+.navbar .container{
+    background: white;
+}
+.navbar-inner{
+    background: white;
+}
+
+ul.lateral a{
+    color: #a9a9a9;
+    font-weight: bolder;
+    font-size: 140%;
+    font-family: helveticaneue,sans-serif;
+    padding: 15px 5px;
+    text-shadow:#eeeeee 5px 5px 2px;
+}
+
+ul.lateral a:hover{
+    background: white;
+    text-shadow:-1px 0 #777777, 0 1px #777777, 1px 0 #777777, 0 -1px #777777,#eeeeee 5px 5px 2px;
+}
+ul.lateral img{
+    vertical-align: middle;
+    margin-right: 10px;
+    width:32px;
+    float:left;
+    display: inline;
+}
+
+.section-link img{
+    margin-left: 0;
+}
+.section-link h6{
+     margin-right: 0;
+     font-size: 140%;
+     line-height: 120%;
+     font-family: helveticaneue,sans-serif;
+     color:#a9a9a9;
+ }
+
+.section-link a:hover h6{
+    text-shadow:-1px 0 #777777, 0 1px #777777, 1px 0 #777777, 0 -1px #777777,#eeeeee 5px 5px 2px;
+
+}
+
+
+.workBox-container{
+    padding: 20px;
+}
+div.workBox {
+    height: 310px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.slider{
+    position: relative;
+    top: 250px;
+    left: 0;
+    font-size:90%;
+    line-height:120%;
+    padding-left: 7px;
+    height: 800px;
+    background: rgba(119, 152, 43, 0.8);;
+    border-top: 5px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+div.wb-stampa{
+    background-image: url(../img/wb/workBoxPicBranding.jpg);
+    background-repeat: no-repeat;
+
+}
+div.wb-stampa .slider{
+    border-color: rgb(25, 107, 176);
+}
+div.wb-legatoria .slider{
+    border-color: #00A000;
+}
+div.wb-foto .slider{
+    border-color: #8d0707;
+}
+div.wb-legatoria{
+    background-image: url(../img/wb/workBoxPicWebDesign.jpg)
+}
+div.wb-foto{
+    background-image: url(../img/wb/showcase_foto.jpg)
+}
+
+
+.workBox img{
+    width:100%
+}
+
+
+ul.lateral li{
+
+}
+
+.bottom-box{
+    background:rgb(236, 241, 180);
+    border-top: 1px  rgba(177, 183, 87,0.9) dotted ;
+}
+.bottom-box.right-bottom{
+    margin-left: 0;
+}
+.left-bottom{
+
+
+    color:#666;
+}
+
+.skype img{
+    border: none;
+}
+.skype{
+    border-top: 1px  rgba(177, 183, 87,0.9) dotted ;
+
+}
+.right-bottom{
+
+}
+.right.top{
+    min-height: 470px;
+}
+.right{
+    margin-left: 0;
+    padding-left: 10px;
+    padding-bottom:10px;
+    border-left: 1px  rgba(177, 183, 87,0.9) dotted ;
+}
+.left{
+
+    margin-left: -1px;
+    padding: 5px;
+
+}
+
+.right{
+
+}
+.bottom-box{
+    bottom: 0;
+    height: 340px;
+}
+.brand.home{
+    background: white url(../img/logo.png) no-repeat center;
+    float:right;
+    -moz-box-shadow: 5px 5px 2px rgba(177, 183, 87,0.9);
+    -webkit-box-shadow: 5px 5px 2px rgba(177, 183, 87,0.9);
+    box-shadow: 5px 5px 2px rgba(177, 183, 87,0.9);
+    border: 1px solid rgba(177, 183, 87,0.9);
+    border-top: 1px solid white;
+    height: 60px;
+    width: 240px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    top:10px;
+    left:400px;
+    position: absolute;
+    z-index: 0;
+    -webkit-border-radius: 0 0 12px 12px;
+    -moz-border-radius: 0 0 12px 12px;
+    border-radius:  0 0 12px 12px;
+
+}
+
+.brand.app{
+    background: white url(../img/logo-app.png) no-repeat center;
+    height: 30px;
+    width: 120px;
+    float:left;
+    opacity: 0;
+}
+
+
+.navbar .nav > li > a{
+    font-size: 65%     ;
+    padding: 10px 5px 10px;
+
+}
+.nav-top li {
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    background: white;
+}
+.navbar-fixed-top{
+
+    -moz-box-shadow: 5px 5px 2px rgba(177, 183, 87,0.9);
+    -webkit-box-shadow: 5px 5px 2px rgba(177, 183, 87,0.9);
+    box-shadow: 5px 5px 2px rgba(177, 183, 87,0.9);
+    border: 1px solid rgba(177, 183, 87,0.9);
+    background: white;
+}
+
+header .nav-collapse{
+    float:right;
+
+}
+.prestampa_box h1, .legatoria_box h1{
+     font-size: 150%;
+    margin-bottom: 5px;
+    color: white;
+}
+.prestampa_box, .legatoria_box{
+    -moz-box-shadow: 5px 5px 2px rgba(177, 183, 87,0.9);
+    -webkit-box-shadow: 5px 5px 2px rgba(177, 183, 87,0.9);
+    box-shadow: 5px 5px 2px rgba(177, 183, 87,0.9);
+
+    -webkit-border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    border-radius:  12px 12px 12px 12px;
+
+    padding: 10px;
+    margin: 10px;
+    margin-left: 30px;
+    display: inline;
+}
+.prestampa_box.little.span4{
+    width: 297px;
+}
+.page_box_singolo{
+
+    background: url(../img/prestampa/prestampa_bg.jpg) no-repeat bottom transparent 80%;
+}
+
+.green {
+    background: rgba(177, 183, 87,0.6);
+    border: 1px solid rgba(177, 183, 87,0.6);
+}
+.blue {
+    background: rgba(167, 210, 246, 0.6);
+    border: 1px solid rgba(167, 210, 246, 0.6);
+}
+
+
+.dark-blue {
+    background: rgba(167, 210, 246,1);
+    border: 1px solid rgba(167, 210, 246, 1);
+}
+
+#Design-Stages{
+    width:513px;
+    float:left;
+}
+#Design-Stages h3{
+    color:#FFFFFF;
+    font-family:Georgia,Times New Roman,Times,serif;
+    font-size:22px;
+    font-weight:normal;
+    margin:0;
+    padding:0 0 40px 0;
+    float:left;
+}
+#Design-Stages ul{
+
+    float:left;
+    border-top:2px solid #31302e;
+    padding:0 0 10px 0;
+    margin:0;
+}
+#Design-Stages ul li{
+    float:left;
+    list-style:none;
+    margin:-20px 40px 0 0;
+    position: relative;
+}
+#Design-Stages ul li.Stage9{
+    padding:0;
+    margin:-20px 0 0 0;
+}
+#Design-Stages ul li a{
+    float:left;
+    display:inline;
+    width:35px;
+    height:33px;
+}
+#Design-Stages ul li.Stage1 a{
+    text-indent: -9000px;
+    background:transparent url(../img/legatoria/stage1.gif) no-repeat 0 -33px;
+}
+#Design-Stages ul li.Stage2 a{
+    text-indent: -9000px;
+    background:transparent url(../img/legatoria/stage2.gif) no-repeat 0 -33px;
+}
+#Design-Stages ul li.Stage3 a{
+    text-indent: -9000px;
+    background:transparent url(../img/legatoria/stage3.gif) no-repeat 0 -33px;
+}
+#Design-Stages ul li.Stage4 a{
+    text-indent: -9000px;
+    background:transparent url(../img/legatoria/stage4.gif) no-repeat 0 -33px;
+}
+#Design-Stages ul li.Stage5 a{
+    text-indent: -9000px;
+    background:transparent url(../img/legatoria/stage5.gif) no-repeat 0 -33px;
+}
+#Design-Stages ul li.Stage6 a{
+    text-indent: -9000px;
+    background:transparent url(../img/legatoria/stage6.gif) no-repeat 0 -33px;
+}
+#Design-Stages ul li.Stage7 a{
+    text-indent: -9000px;
+    background:transparent url(../img/legatoria/stage7.gif) no-repeat 0 -33px;
+}
+#Design-Stages ul li.Stage8 a{
+    text-indent: -9000px;
+    background:transparent url(../img/legatoria/stage8.gif) no-repeat 0 -33px;
+}
+#Design-Stages ul li.Stage9 a{
+    text-indent: -9000px;
+    background:transparent url(../img/legatoria/stage9.gif) no-repeat 0 -33px;
+}
+#Design-Stages ul li a.Active{
+    cursor:default;
+    background-position:0 0;
+}
+img{
+    vertical-align:text-bottom;
+}
+
+#Design-Stages ul li .tooltip{
+    background:transparent url(http://www.creativeonlinemedia.com/assets/img/tooltip_bg.png) no-repeat 0 0;
+    width: 190px;
+    height:26px;
+    overflow:hidden;
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    text-align: center;
+    padding: 5px 5px 22px 5px;
+    z-index: 2;
+    font-size:12px;
+    display:none;
+    color:#FFFFFF;
+}
+.legatoria_servizi {
+    float:left;
+    font-size:13px;
+    color:#666666;
+    line-height:17px;
+    padding-top:6px;
+}
+.legatoria_servizi ul {
+    margin:0;
+    padding:0 0 0 4px;
+    width:300px;
+    float:left;
+}
+.legatoria_servizi li {
+    margin:0;
+    padding:2px 0 0 6px;
+    list-style:none;
+    height:21px;
+    background: url(../img/legatoria/rounded.gif) top left no-repeat;
+}
+
+.stage_box{
+    float: left;
+}
+.stage_img{
+    float: right;
+}
+
+.dove_content {
+    margin:0;
+    padding:0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Tahoma, Verdana;
+    font-size: 16px;
+    color:#333333;
+    line-height:18px;
+}
+.dove_sopra {
+    width:610px;
+    padding-left:50px;
+    font-size: 16px;
+}
+.dove_info {
+    float:left;
+    width:384px;
+    height:193px;
+    background: url(../img/dove/dove_bg_info.jpg) no-repeat;
+}
+.dove_info ul {
+    margin:0;
+    padding:25px 0 0 75px;
+    list-style:none;
+}
+.dove_info ul li {
+    margin:0;
+    padding:0 0 25px 0;
+}
+.dove_orario {
+    float:right;
+    padding-left:10px;
+    width:212px;
+    height:193px;
+    background: url(../img/dove/dove_bg_orario.jpg) no-repeat right;
+}
+.dove_orario ul {
+    margin:0;
+    padding:25px 0 0 20px;
+    list-style:none;
+}
+.dove_orario ul li {
+    margin:0;
+    padding:0 0 25px 0;
+}
+.dove_map {
+    width:610px;
+    height:80px;
+    background: url(../img/dove/dove_bg_map.jpg) no-repeat;
+}
+.dove_map_text {
+    padding:20px 0 0 90px;
+}
+.dove_googlemap {
+    width:570px;
+    margin:0 auto;
+    font-size:12px;
+}
+.tools{
+    background:rgb(236, 241, 180);
+}
+#righe .bind-target th a{
+    color:#333;
+}
+#righe .bind-target{
+    background: #f5f5f5;
+    color:#333;
+}
+.bv {
+    height: 250px;
+    width: 400px;
+    position: relative;
+    border: 1px solid gray;
+    overflow: hidden;
+    -moz-box-shadow: 5px 5px 2px gray;
+    -webkit-box-shadow: 5px 5px 2px gray;
+    box-shadow: 5px 5px 2px gray;
+
+    -webkit-border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 12px 12px;
+
+}*/
+
+.appBox{
+    display: block;
+
+    margin: 50px auto;
+    float: none;
+
+}
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.appBox-header{
+    background-color: #cccccc;
+    font-size: 180%;
+    color:#555;
+    padding: 20px;
+    -webkit-border-radius: 12px 12px 0 0;
+    -moz-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px ridge #686b66;;
+
+}
+.appBox-body{
+
+    padding-top: 10px;
+    -moz-box-shadow: 2px 2px 2px 2px #bce8f1;
+    -webkit-box-shadow: 2px 2px 2px 2px #bce8f1;
+    box-shadow: 2px 2px 2px 2px #bce8f1;
+    background-color: #ffffff;
+    border-top: none;
+    border-bottom: none;
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+
+}
+.appBox-footer{
+    background-color: #cccccc;
+
+    border-top: 1px ridge #686b66;;
+    -webkit-border-radius: 0 0 12px 12px;
+    -moz-border-radius: 0 0 12px 12px;
+    border-radius: 0 0 12px 12px;
+
+}
+.appBox-header, .appBox-body,.appBox-footer{
+    border: 1px solid #686b66;
+    padding: 10px 25px;
+    -moz-box-shadow: 5px 5px 2px  #686b66;
+    -webkit-box-shadow: 5px 5px 2px  #686b66;
+    box-shadow: 5px 5px 2px  #686b66;
+}
+.appBox-footer .alert-error{
+    margin-top: 15px ;
+    margin-bottom: 15px ;
+    padding: 20px;
+}
+
+
+.hidden{
+    display: none;
+}
+.space-below{
+    margin-bottom: 20px;
+}
+
+.form-horizontal .control-label {
+    width: 100px;
+}
+.form-horizontal .controls {
+    margin-left: 120px;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.icon-red
+{
+    background-image: url("../img/glyphicons-halflings-red.png");
+}
+.form-horizontal .control-group{
+    margin-bottom: 10px;
+}
+
+/*
+.slider h2 {
+    font-weight: bolder;
+    font-size: 240%;
+    font-family: 'Gentium Basic', serif;
+}*/
+
+
+.inbox-message {
+    min-height: 100px;
+    position: absolute;
+    left: 20px;
+    width: 330px;
+
+    opacity: 0.95;
+    z-index: 99999999;
+}
+.inbox-message img{
+    float: left;
+    opacity: 0.04;
+
+    margin-top: 35px;
+
+}
+
+.inbox-message p{
+
+    width:250px;
+    margin: 30px 40px 20px 50px;
+}
+/*
+
+.titolo_quadro h1{
+    color:#999;
+    font-size: 150%;
+}
+
+.page_box_singolo .accordion-heading a h4{
+    font-size: 170%;
+}
+.page_box_singolo .accordion-heading a{
+    color:#666;
+    font-size: 70%;
+}
+.page_box_singolo .accordion-heading a:hover{
+    text-decoration: none;
+}
+
+.page_box_singolo .accordion-group{
+    margin-bottom: 20px;
+}
+
+.page_box_singolo .accordion-heading{
+    background-color: rgba(236, 241, 180,0.6);
+}
+.page_box_singolo .accordion-group:hover .accordion-heading{
+    background-color: rgba(236, 241, 180,1);
+}
+*/
+
+
+
+.page-not-found{
+    height: 300px;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background: url(../img/404.jpg) no-repeat;
+    text-shadow:#ccc 10px 10px 2px;
+    font-size: 150%;
+    font-weight: bolder;
+    color: #666;
+}
+
+.page-error{
+    height: 300px;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background: url(../img/page-error.png) no-repeat;
+    text-shadow:rgba(140, 42, 24, 0.36) 10px 10px 2px;
+    font-size: 150%;
+    font-weight: bolder;
+    color: rgba(140, 42, 24, 1);
+}
+/*.tools ul {
+    margin: 0;
+    padding: 0;
+}*/
+.folder-page.active-folder-page {
+  display: block;
+}
+.folder-page{
+   display: none;
+}
+/*.tools ul li.active-tools-page {
+    font-weight: bold;
+}
+.tools ul li.active-tools-page:hover {
+    background:rgb(236, 241, 180);
+
+}*/
+.folder ul li:hover {
+    cursor: pointer;
+}
+.folder ul li a:hover {
+
+    cursor: pointer;
+}
+.folder ul li.active-folder-page:hover {
+     cursor: default;
+}
+.folder ul li.active-folder-page a:hover {
+
+    cursor: default;
+}
+/*.tools ul li a:hover{
+    text-decoration: none;
+}
+.tools ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    border-right: 1px rgb(177, 183, 87) dotted;
+}
+.tools ul li:hover {
+    background:rgb(226, 231, 170);
+}
+.tools ul li a {
+    padding: 3px;
+    color: #666666;
+
+    margin: 0 10px;
+    height: 30px;
+    line-height: 30px;
+
+}
+.tools-page .accordion-group{
+    border: none;
+}
+.tools-page .accordion-group .accordion-heading {
+    display: none;
+}
+
+.tools-page .accordion-body {
+    display: none;
+}
+.tools-page .accordion-body.in {
+    display: block;
+    background: white;
+    width: 500px;
+    height: 280px;
+    margin: 20px;
+    border: lightgray;
+    border-radius: 15px;
+}
+
+.prestampa_box.span9 {
+    width: 660px;
+}
+
+.legatoria_gallery {
+    margin-left: -20px;
+}*/
+
+
+ol.start {
+    counter-reset: start-counter;
+}
+ol.continue {
+    counter-reset: continue-counter 4;
+}
+ol.start li, ol.continue li {
+    list-style: none;
+}
+
+ol.start li:before {
+    counter-increment: start-counter;
+    content: counter(start-counter) ". ";
+
+}
+ol.continue li:before {
+    counter-increment: continue-counter;
+    content: counter(continue-counter) ". ";
+}
+/*
+
+.More.folder-page {
+    min-height: 350px;
+}
+*/

@@ -1,0 +1,79 @@
+<div class="row">
+    <div class="span9">
+        <h1>Elenco utenti</h1>
+    </div>
+
+</div>
+<div class="row space-below">
+    <div class="span9">
+        <a ng-open-dialog="openNewUser()" ng-dialog="#zoom" class="btn btn-primary"><i class="icon-white icon-plus-sign"></i> Nuovo</a>
+    </div>
+</div>
+<div class="row">
+    <div class="span9" id="righe">
+
+
+        <table class="table table-hover table-bordered table-condensed table-striped">
+            <thead>
+                <tr>
+
+                    <th>Username</th>
+                    <th>Ruolo</th>
+                    <th>Email</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="u in users">
+
+                    <td> {{u.username}}</td>
+                    <td> {{u.ruolo}}</td>
+                    <td> {{u.email}}</td>
+
+                    <td>
+                        <a ng-open-dialog="openEditUser()" ng-dialog="#zoom" class="btn btn-small"><i class="icon-zoom-in"></i></a>
+                    </td>
+                    <td>
+                        <a ng-click="delete()" class="btn btn-danger btn-small"><i class="icon-white icon-remove-sign"></i></a>
+                    </td>
+
+
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <div class="modal hide fade" id="zoom">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Modifica utente {{editUser.Nome}} {{editUser.Cognome}}</h3>
+            </div>
+            <form action="" class="form-horizontal">
+                <div class="modal-body">
+                    <text error="{{editUser.error.username}}" model="editUser.username" label="Username"></text>
+                    <password error="{{editUser.error.password}}" model="editUser.password" label="Password"></password>
+
+                    <text error="{{editUser.error.nome}}" model="editUser.nome" label="Nome"></text>
+                    <text error="{{editUser.error.cognome}}" model="editUser.cognome" label="Cognome"></text>
+                    <email error="{{editUser.error.email}}" model="editUser.email" label="Email"></email>
+                    <combo error="{{editUser.error.ruolo}}" options="ruoli" model="editUser.ruolo" label="Ruolo"></combo>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button ng-close-dialog="saveUser" ng-dialog="#zoom" class="btn btn-success btn-large">Salva</button>
+                    <a href="#" class="btn" data-dismiss="modal">Chiudi</a>
+
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+</div>
