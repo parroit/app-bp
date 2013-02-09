@@ -1,6 +1,6 @@
 {
     "name": "app-bp",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Boilerplate code for modern application based on mongodb,node,angular,h5bp and twitter bootstrap",
     "main": "index.js",
     "bin": { "app-bp": "index.js" },
@@ -17,7 +17,9 @@
         "jinjs":"0.3.6",
         "mongodb": "1.2.8",
         "nodemailer": "0.3.37",
-        "validator": "0.4.24"
+        "validator": "0.4.24",
+        "bootstrap-npm": "2.3.0",
+        "html5-boilerplate-npm": "4.1.0"
     },
     "engines": { "node": "*" }
 }
