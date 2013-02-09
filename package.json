@@ -1,8 +1,7 @@
 {
     "name": "app-bp",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Boilerplate code for modern application based on mongodb,node,angular,h5bp and twitter bootstrap",
-    "preferGlobal": "false",
     "main": "index.js",
     "bin": { "app-bp": "index.js" },
     "author": "Andrea Parodi",
