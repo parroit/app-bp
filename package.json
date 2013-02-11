@@ -8,7 +8,7 @@
     "keywords": ["angular", "h5bp", "mvc","mongodb","bootstrap", "boilerplate"],
     "repository" : {
         "type": "git",
-        "url": "https://github.com/parroit/ModernAppBP.git"
+        "url": "https://github.com/parroit/app-bp.git"
     },
     "dependencies": {
         "async": "0.1.22",
