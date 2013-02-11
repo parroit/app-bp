@@ -17,9 +17,15 @@
 {% endblock %}
 
 {%  block scripts %}
-    <script src="js/angular.js"></script>
-    <script src="js/require.js"></script>
-    <script src="js/client.js"></script>
+    <link rel="stylesheet" href="js/pagedown-bootstrap/Markdown.Editor.css">
+
+    <script type="text/javascript" src="js/moment/moment.min.js"></script>
+    <script type="text/javascript" src="js/pagedown-bootstrap/Markdown.Converter.js"></script>
+    <script type="text/javascript" src="js/pagedown-bootstrap/Markdown.Sanitizer.js"></script>
+    <script type="text/javascript" src="js/pagedown-bootstrap/Markdown.Editor.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
     <script type="text/javascript">
         ClientApp.createFrom("{{ angular_app_name }}");
 
