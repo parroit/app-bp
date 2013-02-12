@@ -6,7 +6,7 @@
 
         {% block body_content %}
         {% endblock %}
-        <div ng-view></div>
+        <div ng-view class="space-above"></div>
 
         <footer>
             {% block footer %}
@@ -32,4 +32,10 @@
 
 
     </script>
+{% endblock %}
+
+
+{% block additional_css %}
+    <link href="css/angular-app.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 {% endblock %}

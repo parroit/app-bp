@@ -14,3 +14,5 @@ exports.mongoId = function (hexId) {
     var BSON = require('mongodb').BSONPure;
     return BSON.ObjectID.createFromHexString(hexId);
 };
+
+exports.async=require("async");
