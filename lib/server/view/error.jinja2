@@ -1,5 +1,8 @@
-{% extends view_path("layout") %}
-{% block content %}
+{% let page_title = 'Server error' %}
+{% include view_path("common") %}
+
+{% extends view_path("default_body") %}
+{% block body_content %}
     <article>
         <div class="span9 page-error">
 

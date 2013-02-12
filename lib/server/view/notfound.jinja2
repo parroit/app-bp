@@ -1,6 +1,9 @@
-{% extends "./layout.jinja2" %}
+{% let page_title = 'Page not found' %}
+{% include view_path("common") %}
 
-{% block content %}
+{% extends view_path("default_body") %}
+
+{% block body_content %}
     <article>
         <div class="span9 page-not-found">
 
