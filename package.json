@@ -1,6 +1,6 @@
 {
     "name": "app-bp",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Boilerplate code for modern application based on mongodb,node,angular,h5bp and twitter bootstrap",
     "main": "index.js",
     "bin": { "app-bp": "index.js" },
