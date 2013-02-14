@@ -121,3 +121,46 @@ ol.continue li:before {
     counter-increment: continue-counter;
     content: counter(continue-counter) ". ";
 }
+
+
+i{
+    display: none;
+}
+
+li [class^="icon-"],
+.nav li [class^="icon-"],
+li [class*=" icon-"],
+.nav li [class*=" icon-"] {
+    display: none;
+
+}
+
+[class^="icon-"], [class*=" icon-"]{
+    display: none;
+}
+.js.fontface li [class^="icon-"],
+.js.fontface .nav li [class^="icon-"],
+.js.fontface li [class*=" icon-"],
+.nav li [class*=" icon-"] {
+    display: inline-block;
+
+}
+
+.js.fontface [class^="icon-"], .js.fontface [class*=" icon-"]{
+    display: inline-block;
+}
+
+
+
+.js.fontface i{
+    display: inline-block;
+}
+
+
+
+.js .js-unavailable,.js .old-browser,.no-js .new-browser{
+    display: none;
+}
+.unsunsupported-browser.js .js-unavailable, .js-unavailable{
+    display: block;
+}
