@@ -1,5 +1,6 @@
 var server=require("./lib/server/server");
 exports.useDb=server.useDb;
+exports.config=server.app.config;
 exports.runControllers=server.runControllers;
 
 var auth=exports.auth=require("./lib/server/auth");
