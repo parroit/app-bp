@@ -70,4 +70,13 @@ angular.js client part.
 
  in your site starting javascript file.
 
+** examples **
+
+You can find some example of the use of the library here:
+
+* https://github.com/parroit/app-bp-threeexample
+
+* https://github.com/parroit/app-bp-siteexample
+
+* https://github.com/parroit/app-bp-todoexample
 
