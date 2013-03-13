@@ -62,8 +62,20 @@
                     <text error="{{editUser.error.nome}}" model="editUser.nome" label="Nome"></text>
                     <text error="{{editUser.error.cognome}}" model="editUser.cognome" label="Cognome"></text>
                     <email error="{{editUser.error.email}}" model="editUser.email" label="Email"></email>
-                    <combo error="{{editUser.error.ruolo}}" options="ruoli" model="editUser.ruolo" label="Ruolo"></combo>
-                    <combo error="{{editUser.error.owner}}" options="owners" model="editUser.owner" label="Cliente"></combo>
+
+                    <text error="{{editUser.error.token}}" model="editUser.token" label="Auth token"></text>
+                    <div class="control-group">
+                        <div class="controls">
+                            <a ng-click="showToken()" class="btn"><i class="icon-2x icon-lock"></i> Show</a>
+                            <span class="help-inline ng-binding" ng-bind="error"></span>
+                        </div>
+                    </div>
+
+
+                    <combo error="editUser.error.ruolo" options="ruoli" model="editUser.ruolo" label="Ruolo"></combo>
+                    <combo error="editUser.error.owner" options="owners" model="editUser.owner" label="Cliente"></combo>
+                    <numeric error="{{editUser.error.porta}}" model="editUser.porta" label="Porta privata"></numeric>
+
 
 
                 </div>

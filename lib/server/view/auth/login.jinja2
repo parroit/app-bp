@@ -1,0 +1,50 @@
+{% extends view_path("default_body") %}
+{%  block body_content %}
+<div class="row">
+    <div class="span6 offset3 paneled-body">
+
+        <form action="/login-form" class="form-horizontal" method="post">
+            <div class="appBox-body">
+                <p>Devi accedere con i tuoi dati per visualizzare l'area riservata del sito.</p>
+                <div class="control-group">
+                    <label class="control-label" for="username">User</label>
+
+                    <div class="controls">
+                        <input type="text" name="username" value="{{ username }}" id="username"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="password">Password</label>
+
+                    <div class="controls">
+                        <input type="password" name="password" id="password" value="{{ password }}"/>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <label class="checkbox">
+                            <input type="checkbox" name="remember" value="{{ remember }}"/> Rimani autenticato
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="appBox-footer">
+
+                <button type="submit" class="btn btn-success btn-large">Login</button>
+                &nbsp;
+                <a href="bv#/reset-password">Ho scordato la password</a>
+                &nbsp;|&nbsp;
+                <a href="/register">Registrati</a>
+
+                {% if results.error %}
+                <div ng-bind="error" class="span4 centered alert alert-error">
+                    {{ results.error }}
+                </div>
+                {% endif %}
+
+            </div>
+        </form>
+    </div>
+</div>
+{%  endblock %}

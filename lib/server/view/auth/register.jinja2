@@ -1,0 +1,78 @@
+{% extends view_path("default_body") %}
+
+{% block body_content %}
+
+
+    <div class="span12 appBox">
+        <div class="appBox-header">
+
+            Registrazione utente
+        </div>
+        <div class="appBox-body">
+            <p>Inserisci i tuoi dati per registrare un nuovo account sul sito. Riceverai
+                un'email con un link di conferma che dovrai cliccare.</p>
+
+            <form action="/register-user" method="post" class="bordered span7 form-horizontal">
+                <div class="control-group">
+                    <label class="control-label" for="username">User</label>
+
+                    <div class="controls">
+                        <input type="text" name="username" id="username" value="{{ results.username }}"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="password">Password</label>
+
+                    <div class="controls">
+                        <input type="password" id="password" name="password" value="{{ results.password }}">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="nome">Nome</label>
+
+                    <div class="controls">
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="cognome">Cognome</label>
+
+                    <div class="controls">
+                        <input type="text" id="cognome" name="cognome">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="email">Email</label>
+
+                    <div class="controls">
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+                <div class="control-group" style="padding-top: 30px;">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-success btn-large">Registrami</button>
+
+                    </div>
+                </div>
+                {% if results.error %}
+                    <div class="span4 centered alert alert-error">
+                        {{ results.error }}
+                    </div>
+
+                {% endif %}
+            </form>
+
+
+
+        </div>
+        <div class="appBox-footer">
+            &nbsp;
+            {#<span class="bind" data-name="tags"></span>#}
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
